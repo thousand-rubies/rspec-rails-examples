@@ -6,7 +6,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 gem 'jquery-rails'
 gem 'nokogiri'
-gem 'sass-rails', '~> 4.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
@@ -31,7 +31,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '~> 2.0' # Access IRB on error pages or by <%= console %> in views
+  gem 'web-console', '~> 2.2', '>= 2.2.1' # Access IRB on error pages or by <%= console %> in views
 end
 
 group :test do
