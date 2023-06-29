@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.3'
+gem 'rails', '6.1.7.4'
 
-gem 'coffee-rails', '~> 4.1.0'
-gem 'devise'
-gem 'jquery-rails'
+gem 'coffee-rails', '~> 4.2.2'
+gem 'devise', '>= 4.7.0'
+gem 'jquery-rails', '>= 4.0.5'
 gem 'nokogiri'
-gem 'sass-rails', '~> 4.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
 gem 'sqlite3'
-gem 'turbolinks'
+gem 'turbolinks', '>= 2.5.4'
 gem 'uglifier', '>= 1.3.0'
 gem 'symmetric-encryption', '~> 3.8.1'
 
@@ -18,20 +18,20 @@ group :development, :test do
   gem 'byebug' # Call 'byebug' in code to stop execution and get a debugger console
   gem 'capybara'
   # gem 'chromedriver-helper' # helps with using Chrome in feature specs
-  gem 'factory_girl_rails', '~> 4.5'
+  gem 'factory_girl_rails', '~> 4.6', '>= 4.6.0'
   gem 'pry'
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
   gem 'puffing-billy'
-  gem 'rspec-rails', '~> 3.2'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.0'
   gem 'selenium-webdriver' # used by JavaScript-dependent feature specs (`js: true`)
   gem 'spring' # Spring background-runs app in dev for speed
   gem 'spring-commands-rspec' # Enable Spring for RSpec
 end
 
 group :development do
-  gem 'web-console', '~> 2.0' # Access IRB on error pages or by <%= console %> in views
+  gem 'web-console', '~> 2.3', '>= 2.3.0' # Access IRB on error pages or by <%= console %> in views
 end
 
 group :test do
